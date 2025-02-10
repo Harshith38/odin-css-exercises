@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; /*I didnot add this*/
 }
 
 img {
@@ -10,8 +11,40 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+  /*no need of flex just center it in the body*/
+  /*padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;*/
 }
 
+.container{
+  display: flex;
+  /*yet another way to center the content instead of two center arguments..*/
+
+  /*align-items: center;
+  justify-content: space-between;*/
+  justify-content: center;
+  gap: 52px;
+}
+
+.items{
+  max-width: 200px;
+
+  /*I am using too many flex*/
+  /*display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  width: 200px;*/
+}
+
+/*.text{
+  text-align: center;
+  width: 200px;
+  
+}*/
 /* do not edit this footer */
 .footer {
   position: fixed;
