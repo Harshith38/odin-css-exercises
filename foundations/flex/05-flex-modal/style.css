@@ -4,6 +4,13 @@ html, body {
   height: 100%;
 }
 
+/*line 8-12*/
+.header{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -20,6 +27,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex; /*line 30-31*/
+  padding: 15px;
 }
 
 .icon {
@@ -66,4 +75,21 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+/*line 79-94*/
+.top-right{
+  margin-left: 15px;
+}
+
+.line-one{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 20px;
 }
